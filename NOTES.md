@@ -18,4 +18,8 @@ Without the `.env` deny rule, Claude could read real secrets (e.g. a `DATABASE_U
 
 - `claude --version` → `2.1.292 (Claude Code)`; signed in.
 - `npm test` (4/4 passing) and `npm run lint` (clean) both run.
-- TODO (confirm in a fresh `claude` terminal session, then tick): `/memory` lists the project `CLAUDE.md` as loaded; `/permissions` shows the allow / ask / deny rules; "How do I run the tests here?" is answered with `npm test` from `CLAUDE.md`.
+- [ ] In a fresh `claude` session, `/memory` lists the project `CLAUDE.md` as loaded.
+- [ ] `/permissions` shows the allow / ask / deny rules from `.claude/settings.json`.
+- [ ] "How do I run the tests here?" is answered with `npm test` straight from `CLAUDE.md`.
+
+The `.env` deny rules match `.env` exactly, so Claude can still read `.env.example` to document new config keys.
